@@ -247,7 +247,7 @@ class NbtReader:
 
 if __name__ == "__main__":
     #Test function: read one of the test input files provided and print it out
-    with open("bigtest.nbt", "rb") as f:
+    with open("testData/bigtest.nbt", "rb") as f:
         reader = NbtReader(f)
         result = reader.readNbt()
         pprinter = PrettyPrinter()
