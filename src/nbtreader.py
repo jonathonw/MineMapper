@@ -142,7 +142,7 @@ class NbtReader:
     def readString(self):
         length = self.readShort()
         str = self.file.read(length)
-        unicodestr = utf_8.decode(str)
+        (unicodestr, lengthConsumed) = utf_8.decode(str)
         return unicodestr
 
     def readList(self):
